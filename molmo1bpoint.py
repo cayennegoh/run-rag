@@ -2,10 +2,9 @@ import warnings
 import numpy as np
 import chromadb
 from chromadb.utils.embedding_functions import OpenCLIPEmbeddingFunction
-from langchain_openai import ChatOpenAI
+
 import os
 from PIL import Image
-import pytesseract
 import torch
 import base64
 from chromadb.utils.data_loaders import ImageLoader
