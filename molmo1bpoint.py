@@ -278,7 +278,7 @@ def compare_patches_with_retrieved_image(query_patches, query_coordinates, retri
 import cv2
 import numpy as np
 from PIL import Image
-import matplotlib.pyplot as plt
+
 
 def find_best_match(query_image_path, retrieved_image_embedding, embedding_function, patch_size=(32, 32)):
     """Main function to handle the comparison of query image with the retrieved image."""
