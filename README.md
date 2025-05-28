@@ -1,4 +1,4 @@
-# run-rag
+
 # Build a Docker image
 Prerequisites: Assuming docker is set up, nvidia drivers installed
 >Create a Dockerfile 
@@ -27,6 +27,10 @@ RUN pip install bitsandbytes
 RUN pip install fairscale fire blobfile einops
 RUN pip install transformers==4.48
 RUN pip install chromadb
+RUN pip install opencv-python
+RUN pip install open-clip-torch
+RUN apt install libgl1-mesa-glx 
+RUN apt install -y libglib2.0-0
 RUN apt update
 
 
@@ -51,6 +55,7 @@ mkdir dataset
 cd dataset
 ```
 >Add in the data by uploading required images into the folder
+![image](https://github.com/user-attachments/assets/dbb95989-f9c2-4b8b-b789-080abf63f621)
 
 In the Docker container 
 ```sh
