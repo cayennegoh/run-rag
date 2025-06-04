@@ -29,7 +29,7 @@ RUN pip install transformers==4.48
 RUN pip install chromadb
 RUN pip install opencv-python
 RUN pip install open-clip-torch
-RUN apt install libgl1-mesa-glx 
+RUN apt install -y libgl1-mesa-glx 
 RUN apt install -y libglib2.0-0
 RUN apt update
 
